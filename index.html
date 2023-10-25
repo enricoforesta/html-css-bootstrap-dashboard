@@ -26,27 +26,27 @@
 
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary flex-nowrap">
+        <nav class="navbar bg-body-tertiary flex-nowrap py-3">
             <div class="container-fluid bg-white ">
                 <!-- LOGO -->
-                <div class="xx-logo pe-3">
-                    <img class="img-fluid d-lg-none" src="img/mobile-logo.png" alt="Boolean" width="50" >
-                    <img class="d-none d-lg-inline" src="img/logo.svg" alt="Boolean">
+                <div id="xx-logo" class="pe-3">
+                    <img class="img-fluid d-xxl-none" src="img/mobile-logo.png" alt="Boolean" width="50">
+                    <img class="d-none d-xxl-inline" src="img/logo.svg" alt="Boolean">
                 </div>
                 <!-- LOGO -->
                 <!-- SEARCH -->
-                <div class="xx-search flex-grow-1 d-flex align-items-center position-relative">
+                <div id="xx-search" class="flex-grow-1 d-flex align-items-center position-relative">
                     <label class="ps-1 position-absolute top-50 start-0 translate-middle-y" for="Search"><i
                             class="fa-solid fa-magnifying-glass "></i></label>
-                    <input class="form-control me-2 bg-secondary bg-opacity-25 ps-4" type="search"
+                    <input class="form-control me-2 bg-secondary bg-opacity-25 px-4 py-3" type="search"
                         placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
                 </div>
-                <!-- SEARCH -->
+                <!-- /SEARCH -->
                 <!-- ICON -->
-                <div class="xx-icon">
-                    <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-list-ul px-2"></i></a>
-                    <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-circle-question px-2"></i></a>
-                    <a class="d-none d-lg-inline" href="#"><i class="fas fa-ellipsis-v px-2"></i></a>
+                <div id="xx-icon">
+                    <a class="d-none d-xxl-inline" href="#"><i class="fa-solid fa-list-ul px-2"></i></a>
+                    <a class="d-none d-xxl-inline" href="#"><i class="fa-solid fa-circle-question px-2"></i></a>
+                    <a class="d-none d-xxl-inline" href="#"><i class="fas fa-ellipsis-v px-2"></i></a>
                     <div class="btn-group">
                         <button type="button" class="btndropdown show border-0 bg-white" data-bs-toggle="dropdown"
                             aria-expanded="true">
@@ -60,11 +60,68 @@
                         </ul>
                     </div>
                 </div>
-                <!-- ICON -->
+                <!-- /ICON -->
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- MAIN-LEFT -->
+                <div id="xx-main-left" class="col-auto text-white fs-5 d-flex flex-column">
+                    <div class="p-3"><a href="#"><i class="fa-solid fa-house"></i><span
+                                class="d-none d-xxl-inline ps-3 ps-3">Home</span></a></div>
+                    <div class="p-3"><a href="#"><i class="fa-solid fa-chart-simple"></i><span
+                                class="d-none d-xxl-inline ps-3">Stats</span></a></div>
+                    <div class="p-3"><a href="#"><i class="fa-solid fa-signal"></i><span
+                                class="d-none d-xxl-inline ps-3">Signal</span></a></div>
+                    <div class="p-3 mt-auto"><a href="#"><i class="fa-solid fa-gear"></i><span
+                                class="d-none d-xxl-inline ps-3">Admin</span></a></div>
+                </div>
+                <!-- /MAIN-LEFT -->
+                <div class="col text-white">
+                    <!-- MAIN TOP -->
+                    <div id="xx-main-top" class="row row-cols-1 row-cols-md-3">
+                        <div class="col col-md-4 py-4 order-md-2 text-md-center ps-md-5">
+                            <div>
+                                <span class="me-3">Nuovo Studente</span>
+                                <i class="fa-solid fa-plus p-3 border rounded p-md-2"></i>
+                            </div>
+                        </div>
+                        <div class="col col-md-5 py-4">
+                            <div class="py-2">
+                                <h3 class="d-inline pe-2">Boolean</h3>
+                                <span class="badge rounded-pill text-bg-primary fw-medium">Piano Blaze</span>
+                            </div>
+                            <div>
+                                <span class="badge rounded-pill text-bg-primary fw-medium">3 App</span>
+                                <i class="fa-solid fa-angles-right px-1"></i>
+                                <span class="badge rounded-pill text-bg-primary fw-medium d-xxl-none">+</span>
+                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-xxl-inline">Boolean mobile app</span>
+                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-xxl-inline">Boolean web app</span>
+                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-xxl-inline">Boolean blog app</span>
+                            </div>
+                        </div>
+                        <div class="col col-md-3 py-4">
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                            <h3 class="py-2">125</h3>
+                        </div>
+                    </div>
+                    <!-- /MAIN TOP -->
+                    <div id="xx-main-bottom" class="row">
+
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
