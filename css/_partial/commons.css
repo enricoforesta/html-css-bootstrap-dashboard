@@ -1,29 +1,47 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    background-color: var(--xx-bg-header);
 }
 
-main{
+main {
     height: calc(100vh - 66px);
 }
-a{
+
+a {
     text-decoration: none;
     color: currentColor;
 }
 
-#xx-main-left{
+#xx-main-left {
     background-image: url(/img/sidebar-bg.png);
     background-color: var(--xx-bg-main-left);
 }
 
-#xx-main-top{
+#xx-main-top {
     background-color: var(--xx-bg-main-top);
 }
 
-#xx-search{
+#xx-search {
     background-color: #e5e5e5;
 }
 
-#xx-search > *{
+#xx-search>* {
     background: transparent;
 }
+
+/* RESPONSIVITA */
+
+@media screen and (min-width:576px) {
+    #xx-main-top .offcanvas {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #xx-main-top .offcanvas {
+        width: 50%;
+    }
+}
+
+/* /RESPONSIVITA */
