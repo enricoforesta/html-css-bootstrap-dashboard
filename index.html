@@ -26,39 +26,39 @@
 
 <body>
     <header class="bg-body-tertiary py-2">
-        <nav class="d-flex align-items-center bg-white">    
-                <!-- LOGO -->
-                <div id="xx-logo" class="px-3 d-flex">
-                    <img class=" img-fluid d-lg-none" src="img/mobile-logo.png" alt="Boolean">
-                    <img class=" img-fluid d-none d-lg-inline" src="img/logo.svg" alt="Boolean">
+        <nav class="d-flex align-items-center bg-white">
+            <!-- LOGO -->
+            <div id="xx-logo" class="px-3 d-flex">
+                <img class=" img-fluid d-lg-none" src="img/mobile-logo.png" alt="Boolean">
+                <img class=" img-fluid d-none d-lg-inline" src="img/logo.svg" alt="Boolean">
+            </div>
+            <!-- LOGO -->
+            <!-- SEARCH -->
+            <div id="xx-search" class="input-group w-auto flex-grow-1 rounded">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass "></i></span>
+                <input type="text" class="form-control shadow-none" placeholder="Prova a cercare: Lezioni di Lavarel"
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <!-- /SEARCH -->
+            <!-- ICON -->
+            <div id="xx-icon">
+                <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-list-ul px-2"></i></a>
+                <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-circle-question px-2"></i></a>
+                <a class="d-none d-lg-inline" href="#"><i class="fas fa-ellipsis-v px-2"></i></a>
+                <div class="btn-group">
+                    <button type="button" class="btndropdown show border-0 bg-white" data-bs-toggle="dropdown"
+                        aria-expanded="true">
+                        <i class="fa-solid fa-bell text-warning"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" data-popper-placement="bottom-end"
+                        style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
                 </div>
-                <!-- LOGO -->
-                <!-- SEARCH -->
-                <div id="xx-search" class="input-group w-auto flex-grow-1 rounded">
-                    <span class="input-group-text" id="basic-addon1"><i
-                        class="fa-solid fa-magnifying-glass "></i></span>
-                    <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                <!-- /SEARCH -->
-                <!-- ICON -->
-                <div id="xx-icon">
-                    <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-list-ul px-2"></i></a>
-                    <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-circle-question px-2"></i></a>
-                    <a class="d-none d-lg-inline" href="#"><i class="fas fa-ellipsis-v px-2"></i></a>
-                    <div class="btn-group">
-                        <button type="button" class="btndropdown show border-0 bg-white" data-bs-toggle="dropdown"
-                            aria-expanded="true">
-                            <i class="fa-solid fa-bell text-warning"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" data-popper-placement="bottom-end"
-                            style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
-                            <li><a class="dropdown-item" href="#">Profilo</a></li>
-                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /ICON -->
+            </div>
+            <!-- /ICON -->
         </nav>
     </header>
     <main class="">
@@ -79,12 +79,86 @@
                 <div class="col text-white">
                     <!-- MAIN TOP -->
                     <div id="xx-main-top" class="row row-cols-1">
+                        <!-- NUOVO STUDENTE -->
                         <div class="col col-md-4 py-4 order-md-2 text-md-center ps-md-5">
                             <div>
                                 <span class="me-3">Nuovo Studente</span>
-                                <i class="fa-solid fa-plus p-3 border rounded p-md-2"></i>
+                                <button class="btn text-white border" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body text-start">
+                                        <form class="row g-3">
+                                            <div class="col-lg-6">
+                                                <label for="inputNome" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="inputNome">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="inputCognome" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="inputCognome">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" placeholder=""
+                                                        aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="inputCity" class="form-label">Citta</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <label for="inputState" class="form-label">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Scegli...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <label for="inputZip" class="form-label text-uppercase">cap</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-lg-12 pb-3">
+                                                <label for="inputPhoto" class="form-label">Foto</label>
+                                                <input type="file" class="form-control" id="inputGroupFile02" />
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- /NUOVO STUDENTE -->
+                        <!-- BOOLEAN -->
                         <div class="col col-md-5 py-4">
                             <div class="py-2">
                                 <h3 class="d-inline pe-2">Boolean</h3>
@@ -94,19 +168,24 @@
                                 <span class="badge rounded-pill text-bg-primary fw-medium">3 App</span>
                                 <i class="fa-solid fa-angles-right px-1"></i>
                                 <span class="badge rounded-pill text-bg-primary fw-medium d-lg-none">+</span>
-                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean web app</span>
-                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean blog app</span>
+                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean
+                                    mobile app</span>
+                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean
+                                    web app</span>
+                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean
+                                    blog app</span>
                             </div>
                         </div>
+                        <!-- BOOLEAN -->
+                        <!-- STUDENTI ONLINE -->
                         <div class="col col-md-3 py-4">
                             <span>Studenti online negli ultimi 30 minuti</span>
                             <h3 class="py-2">125</h3>
                         </div>
+                        <!-- STUDENTI ONLINE -->
                     </div>
                     <!-- /MAIN TOP -->
                     <div id="xx-main-bottom" class="row">
-
                     </div>
                 </div>
             </div>
