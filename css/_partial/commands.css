@@ -1,8 +1,9 @@
 #xx-logo{
     max-width: 150px;
+    height: 50px;
 }
 
 #xx-main-left{
     max-width: 400px;
-    height: calc(100vh - 90px)
+    height: calc(100vh - 66px)
 }

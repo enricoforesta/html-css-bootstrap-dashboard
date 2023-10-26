@@ -11,10 +11,17 @@ a{
 #xx-main-left{
     background-image: url(/img/sidebar-bg.png);
     background-color: var(--xx-bg-main-left);
-    background-position-y: 40px;
 }
 
 #xx-main-top{
     background-color: var(--xx-bg-main-top);
 }
 
+#xx-search{
+    background-color: #e5e5e5;
+}
+
+
+#xx-search > *{
+    background: transparent;
+}
