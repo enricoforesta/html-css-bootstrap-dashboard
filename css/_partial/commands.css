@@ -13,8 +13,9 @@
 
 
 /* HOVER */
-#class tbody tr:hover{
+#class tbody tr:hover td{
     cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 #xx-main-left .p-2:hover{
@@ -26,4 +27,5 @@
     background-color: white;
     color: black!important; 
 }
+
 /* /HOVER */

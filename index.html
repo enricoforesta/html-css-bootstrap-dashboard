@@ -61,7 +61,7 @@
             <!-- /ICON -->
         </nav>
     </header>
-    <main class="overflow-y-auto">
+    <main>
         <div class="container-fluid">
             <div class="row">
                 <!-- MAIN-LEFT -->
@@ -76,7 +76,7 @@
                                 class="d-none d-lg-inline ps-3">Admin</span></a></div>
                 </div>
                 <!-- /MAIN-LEFT -->
-                <div class="col ">
+                <div class="col xx-heigt-vh overflow-y-auto">
                     <!-- MAIN TOP -->
                     <div id="xx-main-top" class="row row-cols-1 text-white">
                         <!-- NUOVO STUDENTE -->
@@ -128,8 +128,29 @@
                                             <div class="col-md-4">
                                                 <label for="inputState" class="form-label">Stato</label>
                                                 <select id="inputState" class="form-select">
-                                                    <option selected>Scegli...</option>
-                                                    <option>...</option>
+                                                    <option selected>...
+                                                    <option value="0">Abruzzo</option>
+                                                    <option value="1">Basilicata</option>
+                                                    <option value="2">Calabria</option>
+                                                    <option value="3">Campania</option>
+                                                    <option value="4">Emilia-Romagna</option>
+                                                    <option value="5">Friuli-Venezia Giulia</option>
+                                                    <option value="6">Lazio</option>
+                                                    <option value="7">Liguria</option>
+                                                    <option value="8">Lombardia</option>
+                                                    <option value="9">Marche</option>
+                                                    <option value="10">Molise</option>
+                                                    <option value="11">Piemonte</option>
+                                                    <option value="12">Puglia</option>
+                                                    <option value="13">Sardegna</option>
+                                                    <option value="14">Sicilia</option>
+                                                    <option value="15">Toscana</option>
+                                                    <option value="16">Trentino-Alto Adige</option>
+                                                    <option value="17">Umbria</option>
+                                                    <option value="18">Valle d'Aosta</option>
+                                                    <option value="19">Veneto</option>
+                                                </select></option>
+
                                                 </select>
                                             </div>
                                             <div class="col-md-2">
@@ -163,18 +184,18 @@
                         <div class="col col-md-5 py-4">
                             <div class="py-2">
                                 <h3 class="d-inline pe-2">Boolean</h3>
-                                <span class="badge rounded-pill text-bg-primary fw-medium">Piano Blaze</span>
+                                <a href="#"><span class="badge rounded-pill fw-medium xx-bg-badge">Piano Blaze</span></a>
                             </div>
                             <div>
-                                <span class="badge rounded-pill text-bg-primary fw-medium">3 App</span>
+                                <a href="#"><span class="badge rounded-pill fw-medium xx-bg-badge">3 App</span></a>
                                 <i class="fa-solid fa-angles-right px-1"></i>
-                                <span class="badge rounded-pill text-bg-primary fw-medium d-lg-none">+</span>
-                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean
-                                    mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean
-                                    web app</span>
-                                <span class="badge rounded-pill text-bg-primary fw-medium d-none d-lg-inline">Boolean
-                                    blog app</span>
+                                <a href="#"><span class="badge rounded-pill fw-medium d-lg-none xx-bg-badge">+</span></a>
+                                <a href="#"><span class="badge rounded-pill fw-medium d-none d-lg-inline xx-bg-badge">Boolean
+                                    mobile app</span></a>
+                                <a href="#"><span class="badge rounded-pill fw-medium d-none d-lg-inline xx-bg-badge">Boolean
+                                    web app</span></a>
+                                <a href="#"><span class="badge rounded-pill fw-medium d-none d-lg-inline xx-bg-badge">Boolean
+                                    blog app</span></a>
                             </div>
                         </div>
                         <!-- BOOLEAN -->
@@ -191,161 +212,158 @@
                     <div id="xx-main-bottom" class="row row-cols-1 row-cols-lg-2 py-4 overflow-y-auto">
                         <div class="col col-lg-7">
                             <!-- CLASSI -->
-                            <div id="class" class="border rounded bg-white">
-                                <div class="bg-body-secondary border-bottom">
-                                    <h3 class="p-2">Prossime classi</h3>
+                            <div id="class" class="card mb-3">
+                                <h3 class="card-header">Prossime classi</h3>
+                                <div class="card-body">
+                                <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="w-50" scope="col">Name</th>
+                                        <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
+                                        <th class="text-uppercase" scope="col">roi</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col" class="text-center">Azioni</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 75</td>
+                                        <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success">Done</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 76</td>
+                                        <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success">Done</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 77</td>
+                                        <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success bg-warning">process</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 78</td>
+                                        <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success">Done</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 79</td>
+                                        <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success bg-danger">failed</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 80</td>
+                                        <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success">Done</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 81</td>
+                                        <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success bg-danger">failed</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td scope="row"><img class="img-fluid pe-2"
+                                                src="img/class-avatar.png" alt="">Classe 82</td>
+                                        <td class="d-none d-lg-table-cell">22 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge text-bg-success">Done</span></td>
+                                        <td><button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50 me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-light border border-dark-subtle text-black-50">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                                 </div>
-                                <div class="px-2">
-                                    <table class="table text-center">
-                                        <thead>
-                                            <tr>
-                                                <th class="w-50 text-start" scope="col">Name</th>
-                                                <th scope="col">Data inizio</th>
-                                                <th class="text-uppercase" scope="col">roi</th>
-                                                <th scope="col">Stato</th>
-                                                <th scope="col">Azioni</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 75</td>
-                                                <td>15 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 76</td>
-                                                <td>16 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 77</td>
-                                                <td>17 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success bg-warning">process</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 78</td>
-                                                <td>18 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 79</td>
-                                                <td>19 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success bg-danger">failed</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 80</td>
-                                                <td>20 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 81</td>
-                                                <td>21 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success bg-danger">failed</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td class="text-start" scope="row"><img class="img-fluid pe-2"
-                                                        src="img/class-avatar.png" alt="">Classe 82</td>
-                                                <td>22 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td><button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50 me-1">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-light border border-dark-subtle text-black-50">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                              </div>
                             <!-- /CLASSI -->
                             <!-- FAQ -->
-                            <div id="faq" class="border rounded my-4 bg-white">
-                                <div class="text-uppercase bg-body-secondary border-bottom">
-                                    <h3 class="p-2">f.a.q.</h3>
-                                </div>
-                                <div class="accordion accordion-flush mx-2" id="accordionFlushExample">
+                            <div id="FAQ" class="card mb-3">
+                                <h3 class="card-header text-uppercase">f.a.q</h3>
+                                <div class="card-body">
+                                  <div class="accordion accordion-flush" id="accordionFlushExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button"
@@ -386,50 +404,56 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                </div>
+                              </div>
                             <!-- /FAQ -->
                         </div>
                         <div class="col col-lg-5">
                             <!-- TODO -->
-                            <div id="todo" class="border rounded bg-white">
-                                <div class="bg-body-secondary border-bottom">
-                                    <h3 class="p-2">Todo</h3>
-                                </div>
-                                <div class="m-4 border rounded">
+                            <div class="card mb-3">
+                                <h3 id="todo" class="card-header">Todo</h3>
+                                <div class="card-body">
+                                  <div class="border rounded">
                                     <div class="form-check border-bottom py-2">
-                                        <input class="form-check-input ms-0" type="checkbox" value="">
-                                        <label class="form-check-label ps-2" for="flexCheckDefault">
-                                            Kickoff nuove classi
-                                        </label>
+                                      <input class="form-check-input ms-0" type="checkbox" value="" />
+                                      <label class="form-check-label ps-2" for="flexCheckDefault">
+                                        Kickoff nuove classi
+                                      </label>
                                     </div>
                                     <div class="form-check border-bottom py-2">
-                                        <input class="form-check-input ms-0" type="checkbox" value="">
-                                        <label class="form-check-label ps-2" for="flexCheckChecked">
-                                            Lezione su Bootstrap 5 in classe #110
-                                        </label>
+                                      <input class="form-check-input ms-0" type="checkbox" value="" />
+                                      <label class="form-check-label ps-2" for="flexCheckChecked">
+                                        Lezione su Bootstrap 5 in classe #110
+                                      </label>
                                     </div>
                                     <div class="form-check py-2">
-                                        <input class="form-check-input ms-0" type="checkbox" value="">
-                                        <label class="form-check-label ps-2" for="flexCheckDefault">
-                                            Contollare usarname github studenti
-                                        </label>
+                                      <input class="form-check-input ms-0" type="checkbox" value="" />
+                                      <label class="form-check-label ps-2" for="flexCheckDefault">
+                                        Contollare usarname github studenti
+                                      </label>
                                     </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
                             <!-- /TODO -->
-                            <div id="user" class="my-4 border rounded bg-white">
-                                <ul class="list-group p-3">
-                                    <li class="list-group-item">
-                                        <img class="img-fluid" src="img/stats.jpeg" alt="Stats">
-                                        <h3>Utenti attivi</h3>
-                                        <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
-                                    </li>
-                                    <li class="list-group-item">Gennaio: 1200</li>
-                                    <li class="list-group-item">Febbraio: 800</li>
-                                    <li class="list-group-item">Marzo: 1500</li>
-                                    <li class="list-group-item"><a class="text-decoration-underline text-primary" href="#">Visualizza report approfondito</a></li>
-                                  </ul>
-                            </div>
+                            <!-- USER -->
+                            <div id="user" class="card mb-3">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <img class="img-fluid" src="img/stats.jpeg" alt="Stats">
+                                            <h3>Utenti attivi</h3>
+                                            <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                        </li>
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                        <li class="list-group-item"><a class="text-decoration-underline text-primary"
+                                                href="#">Visualizza report approfondito</a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                            <!-- /USER -->
                         </div>
                     </div>
                     <!-- /MAIN BOTTOM -->
